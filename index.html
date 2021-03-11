@@ -1,0 +1,93 @@
+<html>
+    <head>
+
+    </head>
+    <body>
+
+        <style>
+                .container {
+                    display: grid; 
+                    grid-template-columns: repeat(3, 1fr) 200px;
+                    grid-template-rows: 100px 200px 400px 100px;
+                    grid-gap: 30px; 
+                    
+                    margin: 30px auto;
+                }
+        
+                .header {
+                    grid-column: 1 / -1;
+
+                    background-color: red;
+                    color: white;
+                    padding: 20px;
+                    font-size: 20px;
+                    text-align: center;
+                }
+
+                .sidebar{
+                    grid-column: 4 / 5;
+                    grid-row: 2 / span 2;
+
+                    background-color: red;
+                    color: white;
+                    padding: 20px;
+                    font-size: 20px;
+                    text-align: center;
+                }
+
+                .main {
+                    grid-column: 1 / span 3;
+
+                    background-color: red;
+                    color: white;
+                    padding: 20px;
+                    font-size: 20px;
+                    text-align: center;
+                }
+
+                .footer{
+                    grid-column: 1 / -1;
+
+                    background-color: red;
+                    color: white;
+                    padding: 20px;
+                    font-size: 20px;
+                    text-align: center;
+                }
+
+                .smallbox1 {
+                    background-color: red;
+                    color: white;
+                    padding: 20px;
+                    font-size: 20px;
+                    text-align: center;
+                }
+
+                .smallbox2 {
+                    background-color: red;
+                    color: white;
+                    padding: 20px;
+                    font-size: 20px;
+                    text-align: center;
+                }
+                    
+                .smallbox3 {
+                    background-color: red;
+                    color: white;
+                    padding: 20px;
+                    font-size: 20px;
+                    text-align: center;
+                }
+        </style>
+
+        <div class="container">
+            <div class="header">Header</div>
+            <div class="smallbox1">Small Box 1</div>
+            <div class="smallbox2">Small Box 2</div>
+            <div class="smallbox3">Small Box 3</div>
+            <div class="main">Main</div>
+            <div class="sidebar">sidebar</div>
+            <div class="footer">Footer</div>
+          </div>
+    </body>
+</html>
